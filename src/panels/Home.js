@@ -21,10 +21,10 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 
-		<Group title="Navigation Example">
+		<Group title="Меню">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Show me the Persik, please
+					Найти мастера
 				</Button>
 			</Div>
 		</Group>
