@@ -8,22 +8,6 @@ import App from './App';
 
 // Init VK  Mini App
 connect.send('VKWebAppInit');
-connect.send("VKWebAppAllowNotifications", {});
-{
-  "type": "VKWebAppAllowNotificationsResult",
-  "data": {
-    "result": true
-  }
-}
-{
-  "type": "VKWebAppAllowNotificationsFailed",
-  "data": {
-     "error_type": "..."
-     "error_data": {
-        ...
-     }
-  }
-}
 
 // Если вы хотите, чтобы ваше веб-приложение работало в оффлайне и загружалось быстрее,
 // расскомментируйте строку с registerServiceWorker();
