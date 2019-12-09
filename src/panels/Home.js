@@ -34,7 +34,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Div>
 		<Div>
 		 <Button size="xl" level="2" onClick={go} data-to="about">
-		Поиск по карте
+		О проекте
 		 </Button>
 		</Div>
 		</Group>
