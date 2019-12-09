@@ -11,7 +11,7 @@ import Icon24Link from '@vkontakte/icons/dist/24/link';
 import Icon24Place from '@vkontakte/icons/dist/24/place';
 import Icon24LogoVk from '@vkontakte/icons/dist/24/logo_vk';
 
-const osname = platform();
+const osName = platform();
 
 const About = props => (
 	<Panel id={props.id}>
