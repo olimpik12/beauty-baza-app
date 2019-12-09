@@ -31,6 +31,10 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button size="xl" level="2" onClick={go} data-to="mapview">
 					Открыть карту
 				</Button>
+				<Div>
+					<Button size="xl" level="2" onClick={go} data-to="about">
+					Поиск по карте
+					</Button>
 			</Div>
 		</Group>
 	</Panel>

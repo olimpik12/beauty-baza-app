@@ -7,6 +7,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Home from './panels/Home';
 import Persik from './panels/Persik';
 import MapView from './panels/MapView';
+import About from './panels/About';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -38,6 +39,7 @@ const App = () => {
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
 			<Persik id='persik' go={go} />
 			<MapView id='mapview' go={go} />
+			<About id='about' go={go} />
 		</View>
 	);
 }
