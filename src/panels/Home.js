@@ -27,6 +27,11 @@ const Home = ({ id, go, fetchedUser }) => (
 					Найти мастера
 				</Button>
 			</Div>
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="mapview">
+					Открыть карту
+				</Button>
+			</Div>
 		</Group>
 	</Panel>
 );
