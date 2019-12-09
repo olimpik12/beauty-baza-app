@@ -22,20 +22,21 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>}
 
 		<Group title="Меню">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Найти мастера
-				</Button>
-			</Div>
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="mapview">
-					Открыть карту
-				</Button>
-				<Div>
-					<Button size="xl" level="2" onClick={go} data-to="about">
-					Поиск по карте
-					</Button>
-			</Div>
+		<Div>
+		 <Button size="xl" level="2" onClick={go} data-to="persik">
+		Найти мастера
+		 </Button>
+		</Div>
+		<Div>
+		 <Button size="xl" level="2" onClick={go} data-to="mapview">
+		Открыть карту
+		 </Button>
+		</Div>
+		<Div>
+		 <Button size="xl" level="2" onClick={go} data-to="about">
+		Поиск по карте
+		 </Button>
+		</Div>
 		</Group>
 	</Panel>
 );
