@@ -26,8 +26,6 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button size="xl" level="2" onClick={go} data-to="persik">
 					Найти мастера
 				</Button>
-			</Div>
-			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="mapview">
 					Открыть карту
 				</Button>
