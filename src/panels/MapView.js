@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Panel, PanelHeader, HeaderButton, platform, IOS } from '@vkontakte/vkui';
+import { platform, IOS } from '@vkontakte/vkui';
+import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
+import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
+import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
