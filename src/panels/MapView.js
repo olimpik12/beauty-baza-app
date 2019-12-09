@@ -6,12 +6,12 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import '../style/style.css'
 
-const osname = platform();
+const osName = platform();
 
 const MapView = props => (
 	<Panel id={props.id}>
         <PanelHeader
-			noShadow left={<HeaderButton onClick={() => window.history.back()} >
+			left={<HeaderButton onClick={() => window.history.back()} >
 				{osname === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
