@@ -34,6 +34,16 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
+	maps() {
+		let api = `https://geocode-maps.yandex.ru/1.x/?format=json&geocode=${this.state.search}`
+		fetch(api)
+		.then(res => res.json())
+        .then(data => this.setState({
+            list: data.response.GeoObjectCollection.featureMember
+        }))
+		.catch(e => console.log(e))
+	}
+
 	return (
 		<View activePanel={activePanel} popout={popout}>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
