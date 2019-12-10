@@ -20,6 +20,11 @@ const MapView = props => (
 		>
 			Карта
 		</PanelHeader>
+		<YMaps>
+			<Map className="mapview" width="100vw" height="100vh" defaultState={{ center: props.state.pos, zoom: 9 }} >
+				<Placemark geometry={props.state.pos} />
+			</Map>
+    </YMaps>
 	</Panel>
 );
 
