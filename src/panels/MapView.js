@@ -21,7 +21,7 @@ const MapView = props => (
 			Карта
 		</PanelHeader>
 		<YMaps>
-			<Map className="mapview" width="100%" height="100%" defaultState={{ center: props.state.pos, zoom: 9 }} />
+			<Map width="100%" height="100%" defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
     </YMaps>
 	</Panel>
 );
