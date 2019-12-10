@@ -42,7 +42,7 @@ const App = () => {
             list: data.response.GeoObjectCollection.featureMember
         }))
 		.catch(e => console.log(e))
-	}
+	};
 
 	return (
 		<View activePanel={activePanel} popout={popout}>
