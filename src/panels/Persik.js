@@ -30,6 +30,25 @@ const Persik = props => (
   <option value="f">Педикюр</option>
     </Select>
  </Div>
+
+ <FormField
+      {...restProps}
+      tabIndex={disabled ? null : tabIndex}
+      className={classNames('Select', 'Select--mimicry', {
+        'Select--not-selected': !children,
+        'Select--multiline': multiline,
+        'Select--disabled': disabled,
+        [`Select--align-${alignment}`]: !!alignment
+      }, className)}
+      getRootRef={getRootRef}
+      status={status}
+    >
+      <div className="Select__container">
+        <div className="Select__title">{children || placeholder}</div>
+        <Icon24Dropdown />
+      </div>
+    </FormField>
+
 </Group>
 
 	</Panel>
