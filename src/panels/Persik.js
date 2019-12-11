@@ -21,7 +21,8 @@ const Persik = props => (
 		>
 			Поиск мастеров
 		</PanelHeader>
-		<Select placeholder="Выберите услугу:">
+		Введите критерии поиска
+		<Select placeholder="Выберите услугу">
   <option value="m">Маникюр</option>
   <option value="f">Педикюр</option>
 </Select>
