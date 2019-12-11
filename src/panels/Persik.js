@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
+import { platform, IOS, Select } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -19,9 +19,13 @@ const Persik = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Persik
+			Поиск мастеров
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<Select placeholder="Выберите услугу:">
+  <option value="m">Маникюр</option>
+  <option value="f">Педикюр</option>
+</Select>
+
 	</Panel>
 );
 
