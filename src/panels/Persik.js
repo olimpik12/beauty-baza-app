@@ -9,12 +9,9 @@ import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
-
 import persik from '../img/persik.png';
 import './Persik.css';
 
-
-}
 
 const osName = platform();
 
