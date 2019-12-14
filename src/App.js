@@ -41,7 +41,7 @@ const App = () => {
 			<Poisk id='poisk' go={go} />
 			<MapView id='mapview' go={go} />
 			<About id='about' go={go} />
-			<Profile id='profile' go={go} />
+			<Profile id='profile' fetchedUser={fetchedUser} go={go} />
 		</View>
 	);
 }
