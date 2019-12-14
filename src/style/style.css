@@ -5,6 +5,11 @@
   margin: 20px auto;
 }
 
+.ImageH {
+  display: block;
+  width: 100%;
+}
+
 
 .mapview {
   position: absolute !important;
