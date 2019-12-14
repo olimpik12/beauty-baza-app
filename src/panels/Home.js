@@ -12,6 +12,7 @@ import Icon24Place from '@vkontakte/icons/dist/24/place';
 import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
 import Icon24Info from '@vkontakte/icons/dist/24/info';
 import image3 from '../img/278.png';
+import '../style/style.css'
 
 const Home = ({ id, go,}) => (
 	<Panel id={id}>
@@ -20,7 +21,7 @@ const Home = ({ id, go,}) => (
 		<Group>
 		<tr>
 		<td>
-		<img className="Image" style={ { borderRadius: 20 } } src={ image3 } alt="Beauty-Baza"/>
+		<img className="ImageH" style={ { borderRadius: 20 } } src={ image3 } alt="Beauty-Baza"/>
 		</td>
 		<td>
 		BEAUTY-БАЗА
