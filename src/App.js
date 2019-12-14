@@ -37,14 +37,6 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
-	menu (e) {
-		if(e.state) {
-			this.setState( { activePanel: e.state.panel } );
-		} else {
-			this.setState( { activePanel: 'home', search: '' } );
-			window.history.pushState( { panel: 'home' }, `home` );
-		}
-	}
 
 	return (
 		<View activePanel={activePanel} popout={popout}>
