@@ -9,6 +9,8 @@ import Poisk from './panels/Poisk';
 import MapView from './panels/MapView';
 import About from './panels/About';
 import Profile from './panels/Profile';
+import Master from './panels/Master';
+
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -35,6 +37,15 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
+	menu (e) {
+		if(e.state) {
+			this.setState( { activePanel: e.state.panel } );
+		} else {
+			this.setState( { activePanel: 'home', search: '' } );
+			window.history.pushState( { panel: 'home' }, `home` );
+		}
+	}
+
 	return (
 		<View activePanel={activePanel} popout={popout}>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
@@ -42,6 +53,7 @@ const App = () => {
 			<MapView id='mapview' go={go} />
 			<About id='about' go={go} />
 			<Profile id='profile' fetchedUser={fetchedUser} go={go} />
+			<Master id='master' fetchedUser={fetchedUser} go={go} />
 		</View>
 	);
 }

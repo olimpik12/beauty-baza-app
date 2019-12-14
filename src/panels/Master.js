@@ -14,17 +14,17 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 
 const osName = platform();
 
-const Profile =({ id, go, fetchedUser }) => (
+const Master =({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader
-			left={<HeaderButton onClick={go} data-to="home">
+			left={<HeaderButton onClick={() => window.history.back()}>
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Личный кабинет
+			Карточка мастера
 		</PanelHeader>
     {fetchedUser &&
-    <Group title="Личный кабинет мастера.">
+    <Group title="Информация о мастере и его услугах">
       <Cell
         before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
         description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -33,17 +33,11 @@ const Profile =({ id, go, fetchedUser }) => (
       </Cell>
     </Group>}
 
-    <Div>
-		 <Button size="xl" level="2" onClick={go} data-to="master">
-		Карточка
-		 </Button>
-		</Div>
-
 	</Panel>
 );
 
 
-Profile.propTypes = {
+Master.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
   fetchedUser: PropTypes.shape({
@@ -56,4 +50,4 @@ Profile.propTypes = {
 	}),
 };
 
-export default Profile;
+export default Master;
