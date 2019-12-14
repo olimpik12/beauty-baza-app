@@ -18,7 +18,7 @@ const Home = ({ id, go,}) => (
 		<PanelHeader>Главная</PanelHeader>
 
 		<Group>
-		<Cell/>
+		<Cell>
 			<img className="Image" style={ { borderRadius: 20 } } src={ image3 } alt="Beauty-Baza"/>
 		</Cell>
 		BEAUTY-БАЗА
