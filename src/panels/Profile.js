@@ -10,6 +10,7 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
+import Button from '@vkontakte/vkui/dist/components/Button/Button';
 
 
 const osName = platform();
