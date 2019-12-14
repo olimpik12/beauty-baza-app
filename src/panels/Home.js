@@ -17,7 +17,7 @@ const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
 
-		<Group>
+		<Group style={{display: 'flex'}}>
 		<img className="Image" style={ { borderRadius: 20, marginRight: 8 } } src={ image3 } alt="Beauty-Baza"/>
 		BEAUTY-БАЗА
 		</Group>
