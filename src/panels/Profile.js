@@ -14,9 +14,9 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 const osName = platform();
 
 const Profile =({ id, go, fetchedUser }) => (
-	<Panel id={props.id}>
+	<Panel id={id}>
 		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="home">
+			left={<HeaderButton onClick={go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
@@ -36,7 +36,7 @@ const Profile =({ id, go, fetchedUser }) => (
 );
 
 
-Poisk.propTypes = {
+Profile.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
   fetchedUser: PropTypes.shape({
