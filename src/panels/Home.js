@@ -24,12 +24,12 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Group title="Меню">
 		<Div>
 		 <Button size="xl" level="2" onClick={go} data-to="poisk">
-		Найти мастера
+		Найти мастера в каталоге
 		 </Button>
 		</Div>
 		<Div>
 		 <Button size="xl" level="2" onClick={go} data-to="mapview">
-		Открыть карту
+		Найти мастера на карту
 		 </Button>
 		</Div>
 		<Div>
