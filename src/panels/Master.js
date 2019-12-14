@@ -17,7 +17,7 @@ const osName = platform();
 const Master =({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="profile">
+			left={<HeaderButton onClick={go} data-to="profile">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
