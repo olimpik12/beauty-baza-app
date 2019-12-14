@@ -9,6 +9,7 @@ import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
+import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 
 
 const osName = platform();
