@@ -9,13 +9,12 @@ import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
-import persik from '../img/persik.png';
-import './Persik.css';
+import './Poisk.css';
 
 
 const osName = platform();
 
-const Persik = props => (
+const Poisk = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
@@ -37,9 +36,11 @@ const Persik = props => (
 	</Panel>
 );
 
-Persik.propTypes = {
+connect.send("VKWebAppJoinGroup", {"group_id": 181509241});
+
+Poisk.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Poisk;

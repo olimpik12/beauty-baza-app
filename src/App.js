@@ -5,7 +5,7 @@ import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenS
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
-import Persik from './panels/Persik';
+import Poisk from './panels/Poisk';
 import MapView from './panels/MapView';
 import About from './panels/About';
 
@@ -37,7 +37,7 @@ const App = () => {
 	return (
 		<View activePanel={activePanel} popout={popout}>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
-			<Persik id='persik' go={go} />
+			<Poisk id='poisk' go={go} />
 			<MapView id='mapview' go={go} />
 			<About id='about' go={go} />
 		</View>
