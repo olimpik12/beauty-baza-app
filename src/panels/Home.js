@@ -11,7 +11,7 @@ import Icon24List from '@vkontakte/icons/dist/24/list';
 import Icon24Place from '@vkontakte/icons/dist/24/place';
 import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
 import Icon24Info from '@vkontakte/icons/dist/24/info';
-import 1120 from '../img/1120.png';
+import image4 from '../img/1120.png';
 import '../style/style.css'
 
 const Home = ({ id, go,}) => (
@@ -19,7 +19,7 @@ const Home = ({ id, go,}) => (
 		<PanelHeader>Главная</PanelHeader>
 
 		<Group>
-		<img className="Image" style={ { borderRadius: 20 } } src={ 1120 } alt="Beauty-Baza"/>
+		<img className="Image" style={ { borderRadius: 20 } } src={ image4 } alt="Beauty-Baza"/>
 		</Group>
 
 		<Group title="Меню">
