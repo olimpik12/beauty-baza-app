@@ -19,7 +19,7 @@ const Home = ({ id, go,}) => (
 		<PanelHeader>Главная</PanelHeader>
 
 		<Group>
-		<img className="ImageH" src={ image4 } alt="Beauty-Baza"/>
+		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
 		</Group>
 
 		<Group title="Меню">
