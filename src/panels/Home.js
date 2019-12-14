@@ -7,6 +7,7 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
+import Icon24List from '@vkontakte/icons/dist/24/list';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -23,7 +24,7 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group title="Меню">
 		<Div>
-		 <Button size="xl" level="2" onClick={go} data-to="poisk">
+		 <Button before={<Icon24List/>} size="xl" level="2" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
 		 </Button>
 		</Div>
