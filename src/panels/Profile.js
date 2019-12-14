@@ -11,6 +11,7 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
+import Icon24Note from '@vkontakte/icons/dist/24/note';
 
 
 const osName = platform();
@@ -35,7 +36,7 @@ const Profile =({ id, go, fetchedUser }) => (
     </Group>}
 
     <Div>
-		 <Button size="xl" level="2" onClick={go} data-to="master">
+		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
 		Карточка
 		 </Button>
 		</Div>

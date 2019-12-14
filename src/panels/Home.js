@@ -8,6 +8,9 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Icon24List from '@vkontakte/icons/dist/24/list';
+import Icon24Place from '@vkontakte/icons/dist/24/place';
+import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
+import Icon24Info from '@vkontakte/icons/dist/24/info';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -29,17 +32,17 @@ const Home = ({ id, go, fetchedUser }) => (
 		 </Button>
 		</Div>
 		<Div>
-		 <Button size="xl" level="2" onClick={go} data-to="mapview">
+		 <Button before={<Icon24Place/>} size="xl" level="2" onClick={go} data-to="mapview">
 		Найти мастера на карте
 		 </Button>
 		</Div>
 		<Div>
-		 <Button size="xl" level="2" onClick={go} data-to="profile">
+		 <Button before={<Icon24Newsfeed/>} size="xl" level="2" onClick={go} data-to="profile">
 		Я Мастер (Личный кабинет)
 		 </Button>
 		</Div>
 		<Div>
-		 <Button size="xl" level="2" onClick={go} data-to="about">
+		 <Button before={<Icon24Info/>} size="xl" level="2" onClick={go} data-to="about">
 		О проекте
 		 </Button>
 		</Div>
