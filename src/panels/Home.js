@@ -29,7 +29,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Div>
 		<Div>
 		 <Button size="xl" level="2" onClick={go} data-to="mapview">
-		Найти мастера на карту
+		Найти мастера на карте
 		 </Button>
 		</Div>
 		<Div>

@@ -8,6 +8,7 @@ import Home from './panels/Home';
 import Poisk from './panels/Poisk';
 import MapView from './panels/MapView';
 import About from './panels/About';
+import Profile from './panels/Profile';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -40,6 +41,7 @@ const App = () => {
 			<Poisk id='poisk' go={go} />
 			<MapView id='mapview' go={go} />
 			<About id='about' go={go} />
+			<Profile id='profile' go={go} />
 		</View>
 	);
 }
