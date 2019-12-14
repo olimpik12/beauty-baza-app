@@ -11,23 +11,22 @@ import Icon24List from '@vkontakte/icons/dist/24/list';
 import Icon24Place from '@vkontakte/icons/dist/24/place';
 import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
 import Icon24Info from '@vkontakte/icons/dist/24/info';
+import image3 from '../img/278.png';
 
-const Home = ({ id, go, fetchedUser }) => (
+const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
-		{fetchedUser &&
-		<Group title="Добро пожаловать!">
-			<Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
+
+		<Group>
+		<Cell/>
+			<img className="Image" style={ { borderRadius: 20 } } src={ image3 } alt="Beauty-Baza"/>
+		</Cell>
+		BEAUTY-БАЗА
+		</Group>
 
 		<Group title="Меню">
 		<Div>
-		 <Button before={<Icon24List/>} size="xl" level="2" alignment="left" onClick={go} data-to="poisk">
+		 <Button before={<Icon24List/>} size="xl" level="2" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
 		 </Button>
 		</Div>

@@ -22,7 +22,7 @@ const About = props => (
 		>
 			О сервисе
 		</PanelHeader>
-        <img className="Image" style={ { borderRadius: 20 } } src={ image3 } alt="Map"/>
+        <img className="Image" style={ { borderRadius: 20 } } src={ image3 } alt="Beauty-Baza"/>
         <Footer>BEAUTY-БАЗА. Поиск мастеров индустрии красоты</Footer>
         <Group>
             <List>
