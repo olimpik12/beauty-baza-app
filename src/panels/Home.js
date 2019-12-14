@@ -27,7 +27,7 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group title="Меню">
 		<Div>
-		 <Button before={<Icon24List/>} size="xl" level="2" onClick={go} data-to="poisk">
+		 <Button before={<Icon24List/>} size="xl" level="2" alignment="left" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
 		 </Button>
 		</Div>
@@ -38,7 +38,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Div>
 		<Div>
 		 <Button before={<Icon24Newsfeed/>} size="xl" level="2" onClick={go} data-to="profile">
-		Я Мастер (Личный кабинет)
+		Я Мастер
 		 </Button>
 		</Div>
 		<Div>
