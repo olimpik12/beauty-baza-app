@@ -36,7 +36,6 @@ const Poisk = props => (
 	</Panel>
 );
 
-connect.send("VKWebAppJoinGroup", {"group_id": 181509241});
 
 Poisk.propTypes = {
 	id: PropTypes.string.isRequired,
