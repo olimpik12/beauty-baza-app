@@ -18,7 +18,7 @@ const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
 
-		<Group>
+		<Group style={ { background-color: #35b8ff } } >
 		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
 		</Group>
 
