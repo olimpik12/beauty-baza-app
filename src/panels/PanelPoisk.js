@@ -10,6 +10,8 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
 
+const osName = platform();
+
 
 const PanelPoisk = props => (
 	  <Select placeholder="Выберите услугу">
@@ -17,6 +19,11 @@ const PanelPoisk = props => (
   <option value="f">Педикюр</option>
     </Select>
 );
+
+PanelPoisk.propTypes = {
+	id: PropTypes.string.isRequired,
+	go: PropTypes.func.isRequired,
+};
 
 
 export default PanelPoisk;

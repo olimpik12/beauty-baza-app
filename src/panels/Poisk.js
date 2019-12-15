@@ -8,7 +8,7 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
-import PanelPoisk from './panels/PanelPoisk';
+import PanelPoisk from './PanelPoisk';
 
 import './Poisk.css';
 
