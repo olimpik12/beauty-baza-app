@@ -7,6 +7,7 @@ import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderBut
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import PanelPoisk from './PanelPoisk';
 import '../style/style.css'
 
 const osName = platform();
@@ -20,6 +21,7 @@ const MapView = props => (
 		>
 			Карта
 		</PanelHeader>
+		<PanelPoisk/>
 		<YMaps>
 			<Map className="mapview" width="100vw" height="100vh" defaultState={{ center: [55.75, 37.57], zoom: 15 }} />
     </YMaps>
