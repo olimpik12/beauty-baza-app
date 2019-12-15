@@ -21,7 +21,6 @@ const MapView = props => (
 		</HeaderButton>}
 		>
 			Карта
-			<Search theme="header" placeholder="Город, район, улица" />
 		</PanelHeader>
 		<Div>
 		<PanelPoisk/>

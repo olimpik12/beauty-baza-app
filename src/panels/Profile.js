@@ -40,9 +40,8 @@ const Profile =({ id, go, fetchedUser }) => (
 	 <Input top="Мобильный телефон" placeholder="+79999999999" />
    </FormLayout>
     <Div>
-		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
-		Карточка
-		 </Button>
+		 <Button size="xl" level="2" stretched style={{ marginRight: 8 }}>Сохранить</Button>
+		 <Button stretched before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">Карточка</Button>
 		</Div>
 		</Group>
 

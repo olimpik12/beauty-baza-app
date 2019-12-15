@@ -23,8 +23,8 @@ const Poisk = props => (
 			</HeaderButton>}
 		>
 			Поиск мастеров
+			<Search theme="header" placeholder="Город, район, улица" />
 		</PanelHeader>
-		<Search placeholder="Город, район, улица" />
 <Group>
  <Div>
 		<PanelPoisk/>
