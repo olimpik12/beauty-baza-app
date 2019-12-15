@@ -8,36 +8,23 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
-import PanelPoisk from './panels/PanelPoisk';
 
 import './Poisk.css';
 
 
 const osName = platform();
 
-const Poisk = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="home">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Поиск мастеров
-		</PanelHeader>
-<Group title="Введите критерии поиска">
- <Div>
-		<PanelPoisk />
- </Div>
-
-</Group>
-
-	</Panel>
+const PanelPoisk = props => (
+	  <Select placeholder="Выберите услугу">
+  <option value="m">Маникюр</option>
+  <option value="f">Педикюр</option>
+    </Select>
 );
 
 
-Poisk.propTypes = {
+PanelPoisk.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Poisk;
+export default PanelPoisk;

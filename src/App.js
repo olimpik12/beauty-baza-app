@@ -10,6 +10,8 @@ import MapView from './panels/MapView';
 import About from './panels/About';
 import Profile from './panels/Profile';
 import Master from './panels/Master';
+import PanelPoisk from './panels/PanelPoisk';
+
 
 
 const App = () => {
