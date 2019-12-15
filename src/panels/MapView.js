@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
+import { platform, IOS, Search } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -21,6 +21,7 @@ const MapView = props => (
 		</HeaderButton>}
 		>
 			Карта
+			<Search theme="header" placeholder="Город, район, улица" />
 		</PanelHeader>
 		<Div>
 		<PanelPoisk/>
