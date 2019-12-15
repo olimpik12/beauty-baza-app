@@ -23,7 +23,7 @@ const PanelPoisk = props => (
                 <SelectMimicry
                   top="Выберите страну"
                   placeholder="Не выбрана"
-                
+                />
 
                 <SelectMimicry
                   top="Выберите город"
