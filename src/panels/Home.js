@@ -16,10 +16,12 @@ import '../style/style.css'
 
 const Home = ({ id, go,}) => (
 	<Panel id={id}>
-		<PanelHeader>Главная</PanelHeader>
+		<PanelHeader>Главная
+		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
+		</PanelHeader>
 
 		<Group>
-		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
+		ппп
 		</Group>
 
 		<Group title="Меню">
