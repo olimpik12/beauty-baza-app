@@ -18,12 +18,12 @@ const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
 
-		<Group>
-		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
+		<Group style={ { background: '#35b8ff' } }>
+		<center><img className="ImageH" src={image4} alt="Beauty-Baza"/></center>
 		</Group>
 		<Group>
 		<Div>
-		<Icon24Info/> Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
+		Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
 		</Div>
 		</Group>
 
