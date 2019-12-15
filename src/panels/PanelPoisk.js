@@ -9,10 +9,7 @@ import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
-import './Poisk.css';
 
-
-const osName = platform();
 
 const PanelPoisk = props => (
 	  <Select placeholder="Выберите услугу">
@@ -21,10 +18,5 @@ const PanelPoisk = props => (
     </Select>
 );
 
-
-PanelPoisk.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-};
 
 export default PanelPoisk;

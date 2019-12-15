@@ -26,7 +26,7 @@ const Poisk = props => (
 		</PanelHeader>
 <Group title="Введите критерии поиска">
  <Div>
-		<PanelPoisk />
+		<PanelPoisk/>
  </Div>
 
 </Group>
