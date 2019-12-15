@@ -48,6 +48,7 @@ const App = () => {
 			<About id='about' go={go} />
 			<Profile id='profile' fetchedUser={fetchedUser} go={go} />
 			<Master id='master' fetchedUser={fetchedUser} go={go} />
+			<PanelPoisk id='panelpoisk' go={go} />
 		</View>
 	);
 }
