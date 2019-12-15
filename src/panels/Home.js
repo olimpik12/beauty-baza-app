@@ -16,15 +16,18 @@ import '../style/style.css'
 
 const Home = ({ id, go,}) => (
 	<Panel id={id}>
-		<PanelHeader>Главная
-		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
-		</PanelHeader>
+		<PanelHeader>Главная</PanelHeader>
 
 		<Group>
-		ппп
+		<center><img className="ImageH" src={ image4 } alt="Beauty-Baza"/></center>
+		</Group>
+		<Group>
+		<Div>
+		Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
+		</Div>
 		</Group>
 
-		<Group title="Меню">
+		<Group title="Меню сервиса:">
 		<Div>
 		 <Button before={<Icon24List/>} size="xl" level="2" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
