@@ -23,7 +23,7 @@ const MapView = props => (
 		</PanelHeader>
 		<Div>
 		<PanelPoisk/>
-		<Div>
+		</Div>
 		<YMaps>
 			<Map className="mapview" width="100vw" height="100vh" defaultState={{ center: [55.75, 37.57], zoom: 15 }} />
     </YMaps>
