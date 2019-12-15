@@ -20,11 +20,13 @@ const PanelPoisk = props => (
   <option value="f">Педикюр</option>
     </Select>
 		<FormLayout>
-                <SelectMimicry placeholder="Выберите страну"/>
+                <SelectMimicry placeholder="Выберите страну">
 								<option>Россия</option>
-                <SelectMimicry placeholder="Выберите город" />
+								</SelectMimicry>
+                <SelectMimicry placeholder="Выберите город">
 								<option>Москва</option>
 								<option>Нижний Новгород</option>
+								</SelectMimicry>
    </FormLayout>
 	</Div>
 );
