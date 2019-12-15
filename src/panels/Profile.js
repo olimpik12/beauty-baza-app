@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select, Textarea } from '@vkontakte/vkui';
+import { platform, IOS, Select, Textarea, FormLayout } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -35,9 +35,9 @@ const Profile =({ id, go, fetchedUser }) => (
       </Cell>
     </Group>}
 	<Group>
-   <Div>
-	 <Textarea title="Напишите о своих услугах" />
-   </Div>
+   <FormLayout>
+	 <Textarea top="Напишите о своих услугах" />
+   </FormLayout>
     <Div>
 		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
 		Карточка
