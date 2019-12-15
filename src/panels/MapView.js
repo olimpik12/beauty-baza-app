@@ -7,6 +7,7 @@ import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderBut
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import PanelPoisk from './PanelPoisk';
 import '../style/style.css'
 
