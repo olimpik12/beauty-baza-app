@@ -12,6 +12,7 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Icon24Note from '@vkontakte/icons/dist/24/note';
+import Icon24DoneOutline from '@vkontakte/icons/dist/24/done_outline';
 
 
 const osName = platform();
@@ -39,8 +40,8 @@ const Profile =({ id, go, fetchedUser }) => (
 	 <Textarea top="Напишите о своих услугах" />
 	 <Input top="Мобильный телефон" placeholder="+79999999999" />
    </FormLayout>
-    <Div>
-		 <Button size="xl" level="2" stretched style={{ marginRight: 8 }}>Сохранить</Button>
+    <Div style={{display: 'flex'}}>
+		 <Button size="xl" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
 		 <Button stretched before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">Карточка</Button>
 		</Div>
 		</Group>
