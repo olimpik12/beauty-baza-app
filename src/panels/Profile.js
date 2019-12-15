@@ -37,7 +37,7 @@ const Profile =({ id, go, fetchedUser }) => (
 	<Group>
    <FormLayout>
 	 <Textarea top="Напишите о своих услугах" />
-	 <Input top="Мобильный телефон" defaultValue="+79999999999" />
+	 <Input top="Мобильный телефон" placeholder="+79999999999" />
    </FormLayout>
     <Div>
 		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
