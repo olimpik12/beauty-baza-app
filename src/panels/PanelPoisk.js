@@ -14,10 +14,25 @@ const osName = platform();
 
 
 const PanelPoisk = props => (
+	<Div>
 	  <Select placeholder="Выберите услугу">
   <option value="m">Маникюр</option>
   <option value="f">Педикюр</option>
     </Select>
+		<FormLayout>
+                <SelectMimicry
+                  top="Выберите страну"
+                  placeholder="Не выбрана"
+                  onClick={() => this.setState({ activeView: 'countries' })}
+                >{this.state.country}</SelectMimicry>
+
+                <SelectMimicry
+                  top="Выберите город"
+                  placeholder="Не выбран"
+                  disabled
+                />
+   </FormLayout>
+	</Div>
 );
 
 PanelPoisk.propTypes = {
