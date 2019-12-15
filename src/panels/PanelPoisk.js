@@ -14,13 +14,13 @@ const osName = platform();
 
 
 const PanelPoisk = props => (
-	<Div>
+	<div>
+	<Search placeholder="Город, район, улица" />
 	  <Select placeholder="Выберите услугу">
   <option value="m">Маникюр</option>
   <option value="f">Педикюр</option>
-    </Select>
-		<Search />
-	</Div>
+    </Select>	
+	</div>
 );
 
 PanelPoisk.propTypes = {
