@@ -34,7 +34,9 @@ const Profile =({ id, go, fetchedUser }) => (
         {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
       </Cell>
     </Group>}
-
+   <Div>
+	 <Textarea top="Напишите о своих услугах" />
+   </Div>
     <Div>
 		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
 		Карточка
