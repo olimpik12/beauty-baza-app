@@ -23,8 +23,7 @@ const PanelPoisk = props => (
                 <SelectMimicry
                   top="Выберите страну"
                   placeholder="Не выбрана"
-                  onClick={() => this.setState({ activeView: 'countries' })}
-                >{this.state.country}</SelectMimicry>
+                
 
                 <SelectMimicry
                   top="Выберите город"
