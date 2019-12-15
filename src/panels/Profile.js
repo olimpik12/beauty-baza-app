@@ -36,7 +36,7 @@ const Profile =({ id, go, fetchedUser }) => (
     </Group>}
 	<Group>
    <Div>
-	 <Textarea top="Напишите о своих услугах" />
+	 <Textarea title="Напишите о своих услугах" />
    </Div>
     <Div>
 		 <Button before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">
