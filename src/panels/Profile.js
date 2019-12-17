@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select, Textarea, FormLayout, Input, Checkbox } from '@vkontakte/vkui';
+import { platform, IOS, Select, Textarea, FormLayout, Input, Checkbox, FixedLayout } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -29,7 +29,7 @@ const Profile =({ id, go, fetchedUser }) => (
 			Личный кабинет
 		</PanelHeader>
     {fetchedUser &&
-    <Group title="Личный кабинет мастера.">
+    <Group title="Личный кабинет мастера">
       <Cell
         before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
         description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -37,7 +37,7 @@ const Profile =({ id, go, fetchedUser }) => (
         {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
       </Cell>
     </Group>}
-	<Group>
+	<Group style={{paddingBottom: 60}} >
    <FormLayout>
 	 <Div top="Какие услуги вы предоставляете?">
 	 <Checkbox>Маникюр</Checkbox>
@@ -49,11 +49,14 @@ const Profile =({ id, go, fetchedUser }) => (
 	 <Input top="Город"/>
 	 <Input top="Адрес. Улица, номер дома"/>
 	 </FormLayout>
-    <Div style={{display: 'flex'}}>
-		 <Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
-		 <Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>
-		</Div>
-		</Group>
+	</Group>
+
+	<FixedLayout vertical="bottom">
+	 <Div style={{display: 'flex'}}>
+		<Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
+		<Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>
+	 </Div>
+	 </FixedLayout>
 
 	</Panel>
 );
