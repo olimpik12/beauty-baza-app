@@ -14,7 +14,6 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Icon24Note from '@vkontakte/icons/dist/24/note';
 import Icon24DoneOutline from '@vkontakte/icons/dist/24/done_outline';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
-import { ReactDadata } from 'react-dadata';
 
 
 const osName = platform();
@@ -42,25 +41,6 @@ const Profile =({ id, go, fetchedUser }) => (
 	 <Textarea top="Напишите о своих услугах" />
 	 <Input top="Мобильный телефон" placeholder="+79999999999" />
 
-	 <div>
-									 <div>Местоположение</div>
-									 {this.state.locations !== 'город Москва' ?
-											 <ReactDadata
-													 token="8d830f48-88a2-4b28-81cd-61f43f4df152"
-													 name="map"
-													 query={this.state.locations === this.props.fetchedUser.city.title ? '' : this.state.locations}
-													 placeholder="Введите адрес"
-													 onChange={this.changeMarker}
-											 />
-									 : ''}
-
-									 <YMaps >
-											 <Map state={{ center: [this.state.lat, this.state.lon], zoom: this.state.zoom }} defaultOptions={{suppressMapOpenBlock: true}} style={{width: '100%', height: 150}}>
-													 <Placemark geometry={[this.state.lat, this.state.lon]} />
-											 </Map>
-									 </YMaps>
-	 </div>
-   </FormLayout>
     <Div style={{display: 'flex'}}>
 		 <Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
 		 <Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>
