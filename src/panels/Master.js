@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select } from '@vkontakte/vkui';
+import { platform, IOS, Select, FixedLayout, Button, List, InfoRow } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -34,6 +34,36 @@ const Master =({ id, go, fetchedUser }) => (
         {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
       </Cell>
     </Group>}
+
+      <Group style={{paddingBottom: 60}} title="Информация о Мастере">
+        <List>
+          <Cell>
+            <InfoRow title="Услуги">
+              Маникюр, Педикюр, Наращивание ресниц
+            </InfoRow>
+          </Cell>
+          <Cell>
+            <InfoRow title="Об услугах">
+              Низкие цены, принимаю дома
+            </InfoRow>
+          </Cell>
+          <Cell>
+            <InfoRow title="Мобильный телефон">
+              +79999999999
+            </InfoRow>
+          </Cell>
+					<Cell>
+            <InfoRow title="Город">
+              Москва
+            </InfoRow>
+          </Cell>
+					<Cell>
+            <InfoRow title="Адрес">
+              Проспект Ленина 7
+            </InfoRow>
+          </Cell>
+        </List>
+      </Group>
 
 		<FixedLayout style={{background: '#ffffff'}} vertical="bottom">
 		 <Div style={{display: 'flex'}}>
