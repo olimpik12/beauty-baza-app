@@ -38,7 +38,7 @@ const Master =({ id, go, fetchedUser }) => (
       <Group style={{paddingBottom: 60}} title="Информация о Мастере">
         <List>
           <Cell>
-            <Div title="Услуги">
+            <Div top="Услуги">
               Маникюр, Педикюр, Наращивание ресниц
             </Div>
           </Cell>

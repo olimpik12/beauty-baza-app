@@ -15,10 +15,11 @@ const osName = platform();
 
 const PanelPoisk = props => (
 	<div>
-	  <Select placeholder="Выберите услугу" style={{paddingBottom: 8}}>
+	  <Select placeholder="Выберите услугу">
   <option value="m">Маникюр</option>
   <option value="f">Педикюр</option>
     </Select>
+		<div></div>
 	<Input value="Город"/>
 	</div>
 );
