@@ -14,6 +14,7 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Icon24Note from '@vkontakte/icons/dist/24/note';
 import Icon24DoneOutline from '@vkontakte/icons/dist/24/done_outline';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import { ReactDadata } from 'react-dadata';
 
 
 const osName = platform();
@@ -45,7 +46,7 @@ const Profile =({ id, go, fetchedUser }) => (
 									 <div>Местоположение</div>
 									 {this.state.locations !== 'город Москва' ?
 											 <ReactDadata
-													 token="d56b4ea98063375016cf15a46b5c09cfc65389bb"
+													 token="8d830f48-88a2-4b28-81cd-61f43f4df152"
 													 name="map"
 													 query={this.state.locations === this.props.fetchedUser.city.title ? '' : this.state.locations}
 													 placeholder="Введите адрес"
