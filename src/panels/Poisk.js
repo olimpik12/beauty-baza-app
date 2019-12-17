@@ -15,8 +15,8 @@ import './Poisk.css';
 
 const osName = platform();
 
-const Poisk = props => (
-	<Panel id={props.id}>
+const Poisk = ({ id, go, fetchedUser }) => (
+	<Panel id={id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
