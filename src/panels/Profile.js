@@ -51,7 +51,7 @@ const Profile =({ id, go, fetchedUser }) => (
 	 </FormLayout>
 	</Group>
 
-	<FixedLayout vertical="bottom">
+	<FixedLayout style={{background: '#ffffff'}} vertical="bottom">
 	 <Div style={{display: 'flex'}}>
 		<Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
 		<Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>
