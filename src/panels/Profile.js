@@ -18,7 +18,7 @@ import Icon24DoneOutline from '@vkontakte/icons/dist/24/done_outline';
 const osName = platform();
 
 const Profile =({ id, go, fetchedUser }) => (
-	<Panel id="541972947">
+	<Panel id={id} >
 		<PanelHeader
 			left={<HeaderButton onClick={go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
@@ -41,8 +41,8 @@ const Profile =({ id, go, fetchedUser }) => (
 	 <Input top="Мобильный телефон" placeholder="+79999999999" />
    </FormLayout>
     <Div style={{display: 'flex'}}>
-		 <Button size="xl" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
-		 <Button stretched before={<Icon24Note/>} size="xl" level="1" onClick={go} data-to="master">Карточка</Button>
+		 <Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
+		 <Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>
 		</Div>
 		</Group>
 
