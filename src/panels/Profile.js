@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select, Textarea, FormLayout, Input } from '@vkontakte/vkui';
+import { platform, IOS, Select, Textarea, FormLayout, Input, Checkbox } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -39,7 +39,7 @@ const Profile =({ id, go, fetchedUser }) => (
     </Group>}
 	<Group>
    <FormLayout>
-	 <Div top="Какие услуги вы предоставляете?" />
+	 <Div top="Какие услуги вы предоставляете?">
 	 <Checkbox>Маникюр</Checkbox>
 	 <Checkbox>Педикюр</Checkbox>
 	 <Checkbox>Наращивание ресниц</Checkbox>
