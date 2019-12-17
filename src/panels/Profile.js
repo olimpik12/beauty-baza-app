@@ -18,7 +18,7 @@ import Icon24DoneOutline from '@vkontakte/icons/dist/24/done_outline';
 const osName = platform();
 
 const Profile =({ id, go, fetchedUser }) => (
-	<Panel id={id}>
+	<Panel id="541972947">
 		<PanelHeader
 			left={<HeaderButton onClick={go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
