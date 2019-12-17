@@ -50,7 +50,7 @@ const Master =({ id, go, fetchedUser }) => (
               +79999999999
             </Div>
 
-            <Div tope="Город">
+            <Div top="Город">
               Москва
             </Div>
 
