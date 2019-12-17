@@ -31,7 +31,7 @@ const Poisk = props => (
  </Div>
 
 </Group>
-<Group title="Результаты поиска">
+<List title="Результаты поиска">
         <Cell
           photo="https://pp.userapi.com/c841034/v841034569/3b8c1/pt3sOw_qhfg.jpg"
           description="VKontakte"
@@ -41,7 +41,7 @@ const Poisk = props => (
         >
           Артур Стамбульцян
         </Cell>
-</Group>
+</List>
 
 	</Panel>
 );

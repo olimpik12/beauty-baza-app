@@ -18,6 +18,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const osName = platform();
 
+
 const Profile =({ id, go, fetchedUser }) => (
 	<Panel id={id} >
 		<PanelHeader
@@ -38,8 +39,15 @@ const Profile =({ id, go, fetchedUser }) => (
     </Group>}
 	<Group>
    <FormLayout>
+	 <Div top="Какие услуги вы предоставляете?" />
+	 <Checkbox>Маникюр</Checkbox>
+	 <Checkbox>Педикюр</Checkbox>
+	 <Checkbox>Наращивание ресниц</Checkbox>
+	 </Div>
 	 <Textarea top="Напишите о своих услугах" />
-	 <Input top="Мобильный телефон" placeholder="+79999999999" />
+	 <Input top="Мобильный телефон" placeholder="+7" />
+	 <Input top="Город"/>
+	 <Input top="Адрес. Улица, номер дома"/>
 	 </FormLayout>
     <Div style={{display: 'flex'}}>
 		 <Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
