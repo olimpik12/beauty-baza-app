@@ -40,7 +40,7 @@ const Profile =({ id, go, fetchedUser }) => (
    <FormLayout>
 	 <Textarea top="Напишите о своих услугах" />
 	 <Input top="Мобильный телефон" placeholder="+79999999999" />
-
+	 </FormLayout>
     <Div style={{display: 'flex'}}>
 		 <Button size="l" level="2" before={<Icon24DoneOutline/>} stretched style={{ marginRight: 8 }}>Сохранить</Button>
 		 <Button stretched before={<Icon24Note/>} size="l" level="1" onClick={go} data-to="master">Карточка</Button>

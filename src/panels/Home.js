@@ -17,10 +17,11 @@ import '../style/style.css'
 const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
-
+   <FixedLayout vertical="top">
 		<Group style={ { background: '#35b8ff' } }>
 		<center><img className="ImageH" src={image4} alt="Beauty-Baza"/></center>
 		</Group>
+		</FixedLayout>
 		<Group>
 		<Div>
 		Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
