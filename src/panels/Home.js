@@ -12,11 +12,11 @@ import '../style/style.css'
 const Home = ({ id, go,}) => (
 	<Panel id={id}>
 		<PanelHeader>Главная</PanelHeader>
-   <FixedLayout vertical="top">
-		<Group style={ { background: '#35b8ff' } }>
+
+		<Div style={ { background: '#35b8ff' } }>
 		<center><img className="ImageH" src={image4} alt="Beauty-Baza"/></center>
-		</Group>
-		</FixedLayout>
+		</Div>
+
 		<Group>
 		<Div>
 		Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
@@ -25,22 +25,22 @@ const Home = ({ id, go,}) => (
 
 		<Group title="Меню сервиса:">
 		<Div>
-		 <Button before={<Icon24List/>} size="xl" level="2" onClick={go} data-to="poisk">
+		 <Button before={<Icon24List/>} size="l" level="2" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Place/>} size="xl" level="2" onClick={go} data-to="mapview">
+		 <Button before={<Icon24Place/>} size="l" level="2" onClick={go} data-to="mapview">
 		Найти мастера на карте
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Newsfeed/>} size="xl" level="2" onClick={go} data-to="profile">
+		 <Button before={<Icon24Newsfeed/>} size="l" level="2" onClick={go} data-to="profile">
 		Я Мастер
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Info/>} size="xl" level="2" onClick={go} data-to="about">
+		 <Button before={<Icon24Info/>} size="l" level="2" onClick={go} data-to="about">
 		О проекте
 		 </Button>
 		</Div>
