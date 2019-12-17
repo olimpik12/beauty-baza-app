@@ -10,6 +10,8 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
+import Icon24Phone from '@vkontakte/icons/dist/24/phone';
+import Icon24Discussions from '@vkontakte/icons/dist/24/discussions';
 
 
 const osName = platform();
@@ -32,6 +34,13 @@ const Master =({ id, go, fetchedUser }) => (
         {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
       </Cell>
     </Group>}
+
+		<FixedLayout style={{background: '#ffffff'}} vertical="bottom">
+		 <Div style={{display: 'flex'}}>
+			<Button size="l" level="1" before={<Icon24Discussions/>} stretched style={{ marginRight: 8 }} component="a" href="https://vk.com/im?sel=541972947">Написать</Button>
+			<Button stretched before={<Icon24Phone/>} size="l" level="1" component="a" href="tel:+79999999999" >Позвонить</Button>
+		 </Div>
+		 </FixedLayout>
 
 	</Panel>
 );
