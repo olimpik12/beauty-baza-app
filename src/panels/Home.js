@@ -30,17 +30,17 @@ const Home = ({ id, go,}) => (
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Place/>} size="l" level="2" onClick={go} data-to="mapview">
+		 <Button before={<Icon24Place/>} stretched size="l" level="2" onClick={go} data-to="mapview">
 		Найти мастера на карте
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Newsfeed/>} size="l" level="2" onClick={go} data-to="profile">
+		 <Button before={<Icon24Newsfeed/>} stretched size="l" level="2" onClick={go} data-to="profile">
 		Я Мастер
 		 </Button>
 		</Div>
 		<Div>
-		 <Button before={<Icon24Info/>} size="l" level="2" onClick={go} data-to="about">
+		 <Button before={<Icon24Info/>} stretched size="l" level="2" onClick={go} data-to="about">
 		О проекте
 		 </Button>
 		</Div>
