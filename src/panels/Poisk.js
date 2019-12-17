@@ -32,13 +32,22 @@ const Poisk = props => (
 </Group>
 <List title="Результаты поиска">
         <Cell
-          photo="https://pp.userapi.com/c841034/v841034569/3b8c1/pt3sOw_qhfg.jpg"
-          description="VKontakte"
-          bottomContent={<Button>Посмотреть карточку</Button>}
-          before={<Avatar src="https://pp.userapi.com/c841034/v841034569/3b8c1/pt3sOw_qhfg.jpg" size={80}/>}
+          photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
+          description="Маникюр, Педикюр"
+          bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
+          before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
           size="l"
         >
-          Артур Стамбульцян
+          Мария Иванова
+        </Cell>
+				<Cell
+          photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
+          description="Маникюр, Педикюр, Наращивание ресниц, Ботокс"
+          bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
+          before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
+          size="l"
+        >
+          Светлана Петрова
         </Cell>
 </List>
 
