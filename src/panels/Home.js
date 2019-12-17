@@ -25,7 +25,7 @@ const Home = ({ id, go,}) => (
 
 		<Group title="Меню сервиса:">
 		<Div>
-		 <Button before={<Icon24List/>} size="l" level="2" onClick={go} data-to="poisk">
+		 <Button before={<Icon24List/>} stretched size="l" level="2" onClick={go} data-to="poisk">
 		Найти мастера в каталоге
 		 </Button>
 		</Div>
