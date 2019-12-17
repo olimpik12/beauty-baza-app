@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
-import {FixedLayout, PanelHeader, Button, Group, Cell, Avatar } from '@vkontakte/vkui';
+import {FixedLayout, PanelHeader, Button, Group, Cell, Avatar, Div } from '@vkontakte/vkui';
 import Icon24List from '@vkontakte/icons/dist/24/list';
 import Icon24Place from '@vkontakte/icons/dist/24/place';
 import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
