@@ -36,33 +36,28 @@ const Master =({ id, go, fetchedUser }) => (
     </Group>}
 
       <Group style={{paddingBottom: 60}} title="Информация о Мастере">
-        <List>
-          <Cell>
+
             <Div top="Услуги">
               Маникюр, Педикюр, Наращивание ресниц
             </Div>
-          </Cell>
-          <Cell>
+
+
             <Div title="Об услугах">
               Низкие цены, принимаю дома
             </Div>
-          </Cell>
-          <Cell>
+
             <Div title="Мобильный телефон">
               +79999999999
             </Div>
-          </Cell>
-					<Cell>
+
             <Div title="Город">
               Москва
             </Div>
-          </Cell>
-					<Cell>
+
             <Div title="Адрес">
               Проспект Ленина 7
             </Div>
-          </Cell>
-        </List>
+          
       </Group>
 
 		<FixedLayout style={{background: '#ffffff'}} vertical="bottom">

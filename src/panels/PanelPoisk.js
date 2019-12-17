@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select, FormLayout, Search, Input } from '@vkontakte/vkui';
+import { platform, IOS, Select, FormLayout, Search, Input, Cell } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -15,12 +15,15 @@ const osName = platform();
 
 const PanelPoisk = props => (
 	<div>
+	<Cell>
 	  <Select placeholder="Выберите услугу">
   <option value="m">Маникюр</option>
   <option value="f">Педикюр</option>
     </Select>
-		<div></div>
+	</Cell>
+	<Cell>
 	<Input value="Город"/>
+	</Cell>
 	</div>
 );
 
