@@ -16,10 +16,10 @@ const Spisok = (id_vk, go, props) => {
 
 
 	return <Cell
-		photo={props.urlfoto}
+		photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
 		description={props.usluga}
 		bottomContent={<Button onClick={go} data-to="master" id_vk={id_vk}>Смотреть карточку</Button>}
-		before={<Avatar src={props.urlfoto} size={80}/>}
+		before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
 		size="l"
 	>
 		{props.first_name} {props.last_name}
@@ -32,13 +32,13 @@ const osName = platform();
 const Poisk = (id, go, props) => {
 
 	let spisok = [
-	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  },
-	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  },
-	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
+	{usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  },
+	{usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  },
+	{usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
 
 ]
 
-		let spisokElements = spisok.map( s => <Spisok urlfoto={s.urlfoto} usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
+		let spisokElements = spisok.map( s => <Spisok usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
 
 
 	return <Panel id={id}>
@@ -56,16 +56,9 @@ const Poisk = (id, go, props) => {
 
 </Group>
 <List title="Результаты поиска">
-        {spisokElements}
-				<Cell
-          photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
-          description="Маникюр, Педикюр, Наращивание ресниц, Ботокс"
-          bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
-          before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
-          size="l"
-        >
-          Светлана Петрова
-        </Cell>
+
+			  {spisokElements}
+
 </List>
 
 	</Panel>
