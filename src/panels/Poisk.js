@@ -14,6 +14,7 @@ import './Poisk.css';
 
 const Spisok = (props) => {
 
+
 	return <Cell
 		photo={props.urlfoto}
 		description={props.usluga}
@@ -28,18 +29,19 @@ const Spisok = (props) => {
 
 const osName = platform();
 
-const Poisk = ({ id, go, fetchedUser, props }) => (
+const Poisk = (id, go, props) => {
 
-{} let spisok = [
-{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  }
-{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  }
-{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
+	let spisok = [
+	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  }
+	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  }
+	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
 
 ]
 
-	let spisokElements = spisok.map( s => <Spisok urlfoto={s.urlfoto} usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
+		let spisokElements = spisok.map( s => <Spisok urlfoto={s.urlfoto} usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
 
-	<Panel id={id}>
+
+	return <Panel id={id}>
 		<PanelHeader
 			left={<HeaderButton onClick={go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
@@ -67,7 +69,7 @@ const Poisk = ({ id, go, fetchedUser, props }) => (
 </List>
 
 	</Panel>
-);
+};
 
 
 Poisk.propTypes = {
