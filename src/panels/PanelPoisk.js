@@ -17,12 +17,12 @@ const PanelPoisk = props => (
 	<div>
 	<Cell>
 	  <Select placeholder="Выберите услугу">
-  <option value="m">{ props.usluga }</option>
-  <option value="f">{ props.usluga }</option>
+  <option value="m">маникюр</option>
+  <option value="f">педикюр</option>
     </Select>
 	</Cell>
 	<Cell>
-	<Input value={ props.gorod }/>
+	<Input value="город" />
 	</Cell>
 	</div>
 );
