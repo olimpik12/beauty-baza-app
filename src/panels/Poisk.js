@@ -18,7 +18,7 @@ const Spisok = (props) => {
 		photo={props.urlfoto}
 		description={props.usluga}
 		bottomContent={<Button onClick={go} data-to="master" id_vk={id_vk}>Смотреть карточку</Button>}
-		before={<Avatar src=( "" + props.urlfoto ) size={80}/>}
+		before={<Avatar src={props.urlfoto} size={80}/>}
 		size="l"
 	>
 		{props.first_name} {props.last_name}
