@@ -12,7 +12,7 @@ import PanelPoisk from './PanelPoisk';
 
 import './Poisk.css';
 
-const Spisok = (props) => {
+const Spisok = (go, props) => {
 
 
 	return <Cell
@@ -38,7 +38,7 @@ const Poisk = (id, go, props) => {
 
 ]
 
-		let spisokElements = spisok.map( s => <Spisok urlfoto={s.urlfoto} usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} bottomContent.id_vk={s.id_vk} bottomContent.go={go} /> );
+		let spisokElements = spisok.map( s => <Spisok urlfoto={s.urlfoto} usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
 
 
 	return <Panel id={id}>
