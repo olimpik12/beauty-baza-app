@@ -32,8 +32,8 @@ const osName = platform();
 const Poisk = (id, go, props) => {
 
 	let spisok = [
-	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  }
-	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  }
+	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  },
+	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  },
 	{urlfoto: 'https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg', usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
 
 ]
