@@ -36,7 +36,7 @@ const Profile =({ id, go, fetchedUser }) => (
       >
         {`${fetchedUser.first_name} ${fetchedUser.last_name}`}
       </Cell>
-    </Group>}
+     </Group>}
 	<Group style={{paddingBottom: 60}} >
    <FormLayout>
 	 <Div top="Какие услуги вы предоставляете?">

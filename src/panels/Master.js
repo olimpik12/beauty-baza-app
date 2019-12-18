@@ -25,8 +25,8 @@ const Master =({ id, go, fetchedUser }) => (
 		>
 			Карточка мастера
 		</PanelHeader>
-    {fetchedUser &&
-    <Group title="Информация о мастере и его услугах">
+     {fetchedUser &&
+      <Group title="Информация о мастере и его услугах">
       <Cell
         before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
         description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}

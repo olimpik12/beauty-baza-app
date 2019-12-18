@@ -25,7 +25,7 @@ const App = () => {
 				const schemeAttribute = document.createAttribute('scheme');
 				schemeAttribute.value = data.scheme ? data.scheme : 'client_light';
 				document.body.attributes.setNamedItem(schemeAttribute);
-			}
+		}
 		});
 		async function fetchData() {
 			const user = await connect.sendPromise('VKWebAppGetUserInfo');
@@ -33,7 +33,7 @@ const App = () => {
 			setPopout(null);
 		}
 		fetchData();
-	}, []);
+	 }, []);
 
 	const go = e => {
 		setActivePanel(e.currentTarget.dataset.to);
