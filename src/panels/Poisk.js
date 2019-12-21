@@ -29,7 +29,7 @@ const Spisok = (go, props) => {
 
 const osName = platform();
 
-const Poisk = ({ id, go, props}) => {
+const Poisk = (id, go, props) => {
 
 let s = [
 {usluga: 'Маникюр', first_name: 'Мария', last_name: 'Иванова'  },
