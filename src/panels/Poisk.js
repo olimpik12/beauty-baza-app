@@ -38,7 +38,7 @@ let s = [
 
 ]
 
-let spisokElements = spisok.map( s => <Spisok usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} /> );
+let spisokElements = s.map( s => <Spisok usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} /> );
 
 
 
