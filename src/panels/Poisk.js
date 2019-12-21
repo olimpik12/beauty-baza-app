@@ -22,7 +22,7 @@ const Spisok = (go, props) => {
 		before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
 		size="l"
 	>
-		{`${props.s.first_name} ${props.s.last_name}`}
+		{`${props.first_name} ${props.last_name}`}
 	</Cell>;
 }
 
