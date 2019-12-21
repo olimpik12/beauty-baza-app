@@ -17,7 +17,7 @@ const Spisok = (go, props) => {
 
 	return <Cell
 		photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
-		description={`${props.s.usluga}`}
+		description={ {props.s.usluga} }
 		bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
 		before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
 		size="l"
