@@ -12,7 +12,7 @@ import PanelPoisk from './PanelPoisk';
 
 import './Poisk.css';
 
-const Spisok = ({go, props) => {
+const Spisok = (go, props) => {
 
 
 	return <Cell
