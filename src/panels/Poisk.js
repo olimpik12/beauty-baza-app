@@ -12,13 +12,13 @@ import PanelPoisk from './PanelPoisk';
 
 import './Poisk.css';
 
-const Spisok = (id_vk, go, props) => {
+const Spisok = (go, props) => {
 
 
 	return <Cell
 		photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
 		description={props.usluga}
-		bottomContent={<Button onClick={go} data-to="master" id_vk={id_vk}>Смотреть карточку</Button>}
+		bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
 		before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
 		size="l"
 	>
@@ -26,22 +26,24 @@ const Spisok = (id_vk, go, props) => {
 	</Cell>;
 }
 
-let spisok = [
-{usluga: 'Маникюр', id_vk: 1, first_name: 'Мария', last_name: 'Иванова'  },
-{usluga: 'Педикюр', id_vk: 2, first_name: 'Наташа', last_name: 'Петрова'  },
-{usluga: 'Шугаринг', id_vk: 3, first_name: 'Юля', last_name: 'Сидорова'  }
-
-]
-
-let spisokElements = spisok.map( s => <Spisok usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} id_vk={s.id_vk} /> );
-
-
 
 const osName = platform();
 
-const Poisk = ({ id, go, props}) => (
+const Poisk = ({ id, go, props}) => {
 
- <Panel id={id}>
+let s = [
+{usluga: 'Маникюр', first_name: 'Мария', last_name: 'Иванова'  },
+{usluga: 'Педикюр', first_name: 'Наташа', last_name: 'Петрова'  },
+{usluga: 'Шугаринг', first_name: 'Юля', last_name: 'Сидорова'  }
+
+]
+
+let spisokElements = spisok.map( s => <Spisok usluga={s.usluga}  first_name={s.first_name} last_name={s.last_name} /> );
+
+
+
+
+ return <Panel id={id}>
 		<PanelHeader
 			left={<HeaderButton onClick={go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
@@ -62,7 +64,7 @@ const Poisk = ({ id, go, props}) => (
 </List>
 
 	</Panel>
-);
+};
 
 
 Poisk.propTypes = {
