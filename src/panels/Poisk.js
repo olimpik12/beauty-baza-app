@@ -12,7 +12,17 @@ import PanelPoisk from "./PanelPoisk";
 
 import "./Poisk.css";
 
-const Spisok = (go, props) => {
+let s = [
+  { usluga: "Маникюр", first_name: "Мария", last_name: "Иванова" },
+  { usluga: "Педикюр", first_name: "Наташа", last_name: "Петрова" },
+  { usluga: "Шугаринг", first_name: "Юля", last_name: "Сидорова" }
+];
+
+let spisokElements = s.map(s => (
+  <Spisok usluga={s.usluga} first_name={s.first_name} last_name={s.last_name} />
+));
+
+const Spisok = s => {
   return (
     <Cell
       photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
@@ -30,7 +40,7 @@ const Spisok = (go, props) => {
       }
       size="l"
     >
-      {`${props.s.first_name} ${props.s.last_name}`}
+      {`${s.first_name} ${s.last_name}`}
     </Cell>
   );
 };
@@ -38,20 +48,6 @@ const Spisok = (go, props) => {
 const osName = platform();
 
 const Poisk = ({ id, go }) => {
-  let s = [
-    { usluga: "Маникюр", first_name: "Мария", last_name: "Иванова" },
-    { usluga: "Педикюр", first_name: "Наташа", last_name: "Петрова" },
-    { usluga: "Шугаринг", first_name: "Юля", last_name: "Сидорова" }
-  ];
-
-  let spisokElements = s.map(s => (
-    <Spisok
-      usluga={s.usluga}
-      first_name={s.first_name}
-      last_name={s.last_name}
-    />
-  ));
-
   return (
     <Panel id={id}>
       <PanelHeader
