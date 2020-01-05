@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS, Select, Cell, Button, Avatar, Search, List } from '@vkontakte/vkui';
+import { platform, IOS, Cell, Button, Avatar, List } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -29,7 +29,7 @@ const Spisok = (go, props) => {
 
 const osName = platform();
 
-const Poisk = ({id, go, props}) => {
+const Poisk = ({id, go}) => {
 
 let s = [
 {usluga: 'Маникюр', first_name: 'Мария', last_name: 'Иванова'  },

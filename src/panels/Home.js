@@ -1,64 +1,95 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
-import {FixedLayout, PanelHeader, Button, Group, Cell, Avatar, Div } from '@vkontakte/vkui';
-import Icon24List from '@vkontakte/icons/dist/24/list';
-import Icon24Place from '@vkontakte/icons/dist/24/place';
-import Icon24Newsfeed from '@vkontakte/icons/dist/24/newsfeed';
-import Icon24Info from '@vkontakte/icons/dist/24/info';
-import image4 from '../img/1120.png';
-import '../style/style.css'
+import React from "react";
+import PropTypes from "prop-types";
+import Panel from "@vkontakte/vkui/dist/components/Panel/Panel";
+import { PanelHeader, Button, Group, Div } from "@vkontakte/vkui";
+import Icon24List from "@vkontakte/icons/dist/24/list";
+import Icon24Place from "@vkontakte/icons/dist/24/place";
+import Icon24Newsfeed from "@vkontakte/icons/dist/24/newsfeed";
+import Icon24Info from "@vkontakte/icons/dist/24/info";
+import image4 from "../img/1120.png";
+import "../style/style.css";
 
-const Home = ({ id, go,}) => (
-	<Panel id={id}>
-		<PanelHeader>Главная</PanelHeader>
+const Home = ({ id, go }) => (
+  <Panel id={id}>
+    <PanelHeader>Главная</PanelHeader>
 
-		<Div style={ { background: '#35b8ff' } }>
-		<center><img className="ImageH" src={image4} alt="Beauty-Baza"/></center>
-		</Div>
+    <Div style={{ background: "#35b8ff" }}>
+      <center>
+        <img className="ImageH" src={image4} alt="Beauty-Baza" />
+      </center>
+    </Div>
 
-		<Group>
-		<Div>
-		Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам, макияжу и многому другому.
-		</Div>
-		</Group>
+    <Group>
+      <Div>
+        Сервис для тех, кто ищет своего мастера по ногтям, причёскам, ресницам,
+        макияжу и многому другому.
+      </Div>
+    </Group>
 
-		<Group title="Меню сервиса:">
-		<Div>
-		 <Button before={<Icon24List/>} stretched size="l" level="2" onClick={go} data-to="poisk">
-		Найти мастера в каталоге
-		 </Button>
-		</Div>
-		<Div>
-		 <Button before={<Icon24Place/>} stretched size="l" level="2" onClick={go} data-to="mapview">
-		Найти мастера на карте
-		 </Button>
-		</Div>
-		<Div>
-		 <Button before={<Icon24Newsfeed/>} stretched size="l" level="2" onClick={go} data-to="profile">
-		Я Мастер
-		 </Button>
-		</Div>
-		<Div>
-		 <Button before={<Icon24Info/>} stretched size="l" level="2" onClick={go} data-to="about">
-		О проекте
-		 </Button>
-		</Div>
-		</Group>
-	</Panel>
+    <Group title="Меню сервиса:">
+      <Div>
+        <Button
+          before={<Icon24List />}
+          stretched
+          size="l"
+          level="2"
+          onClick={go}
+          data-to="poisk"
+        >
+          Найти мастера в каталоге
+        </Button>
+      </Div>
+      <Div>
+        <Button
+          before={<Icon24Place />}
+          stretched
+          size="l"
+          level="2"
+          onClick={go}
+          data-to="mapview"
+        >
+          Найти мастера на карте
+        </Button>
+      </Div>
+      <Div>
+        <Button
+          before={<Icon24Newsfeed />}
+          stretched
+          size="l"
+          level="2"
+          onClick={go}
+          data-to="profile"
+        >
+          Я Мастер
+        </Button>
+      </Div>
+      <Div>
+        <Button
+          before={<Icon24Info />}
+          stretched
+          size="l"
+          level="2"
+          onClick={go}
+          data-to="about"
+        >
+          О проекте
+        </Button>
+      </Div>
+    </Group>
+  </Panel>
 );
 
 Home.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-	fetchedUser: PropTypes.shape({
-		photo_200: PropTypes.string,
-		first_name: PropTypes.string,
-		last_name: PropTypes.string,
-		city: PropTypes.shape({
-			title: PropTypes.string,
-		}),
-	}),
+  id: PropTypes.string.isRequired,
+  go: PropTypes.func.isRequired,
+  fetchedUser: PropTypes.shape({
+    photo_200: PropTypes.string,
+    first_name: PropTypes.string,
+    last_name: PropTypes.string,
+    city: PropTypes.shape({
+      title: PropTypes.string
+    })
+  })
 };
 
 export default Home;
