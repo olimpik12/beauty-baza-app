@@ -12,26 +12,19 @@ import PanelPoisk from "./PanelPoisk";
 
 import "./Poisk.css";
 
-const Spisok = ({ s, go }) => (
-  <Cell
-    photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
-    description="тест"
-    bottomContent={
-      <Button onClick={go} data-to="master">
-        Смотреть карточку
-      </Button>
-    }
-    before={
-      <Avatar
-        src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
-        size={80}
-      />
-    }
-    size="l"
-  >
-    {`${s.first_name} ${s.last_name}`}
-  </Cell>
-);
+const Spisok = (go, props) => {
+
+
+	return <Cell
+		photo="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg"
+		description="тест"
+		bottomContent={<Button onClick={go} data-to="master">Смотреть карточку</Button>}
+		before={<Avatar src="https://sun1-86.userapi.com/c845321/v845321561/207aab/XuC_Bty9geU.jpg" size={80}/>}
+		size="l"
+	>
+		{`${props.first_name} ${props.last_name}`}
+	</Cell>;
+}
 
 const osName = platform();
 
